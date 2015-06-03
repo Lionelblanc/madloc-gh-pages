@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Allindays - La Location courte durée, les services en plus. </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Ropa+Sans|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css"
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="icon" href="allindays.ico" />
+  </head>
+
+  <body>
+<nav class="navbar navbar-default navbar-transparent navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"> 
+        <img alt="Brand" src="./images/LogoAllindays_small.png">
+        </a>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="contact.html"><strong>Contactez-nous</strong></a></li>
+          <li><a href="#"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#orderform"><strong>Louer un appart'</strong></button></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="orderform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      <div class="modal-body">
+     <div id="wufoo-z1pi73pu11poggy">
+Fill out my <a href="https://lionelblanc.wufoo.com/forms/z1pi73pu11poggy">online form</a>.
+</div>
+<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div>
+<script type="text/javascript">var z1pi73pu11poggy;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'lionelblanc',
+'formHash':'z1pi73pu11poggy',
+'autoResize':true,
+'height':'755',
+'async':true,
+'host':'wufoo.com',
+'header':'show',
+'ssl':true};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { z1pi73pu11poggy = new WufooForm();z1pi73pu11poggy.initialize(options);z1pi73pu11poggy.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="spacer"></div>
+<div id="contact">
+  <div class="contaner">
+    <div class="row">
+       <div class="col-xs-12 col-sm-12 col-md-12">
+        <h2>Contactez-nous</h2>
+        <hr>
+          <p>
+            <i class="fa fa-envelope-o fa-2x"></i> 
+              <i> - <a href="mailto:contact@allindays.fr">contact@allindays.fr</a></i> 
+          </p>
+          <p>
+            <i class="fa fa-phone fa-2x"></i> 
+              <i> - 09 83 33 48 81</i> 
+          </p>
+          <p>
+            <i class="fa fa-home fa-2x"></i> 
+            <i> - Société par action simplifiée au capital de 10000 EUR - Siret - 807 786 868 00016 - Numéro de TVA - FR 13807786868</i>
+          </p>
+          <p>
+            <i class="fa fa-map-marker fa-2x"></i>
+              <i> - 131 Boulevard Pereire, 75017 Paris</i>
+          </p>
+          <hr>
+        <div id="map" style="width: 100%; height: 350px;"></div>
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+        <script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(48.884134,2.296351);
+
+  var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":60}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":30}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ef8c25"},{"lightness":40}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#b6c54c"},{"lightness":40},{"saturation":-40}]},{}]
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+  });
+</script>
+
+      </div>
+    </div> 
+  </div> 
+
+    <div class="vertical-spacer"></div>
+
+
+<div id="footer">
+    <div class="container text-center">
+      <div class="row">
+
+          <div class="col-xs-12 col-md-6">
+          <ul class="list-inline social">
+            <li>
+              <a href="https://facebook.com/allindays">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/allindays">
+                <i class="fa fa-linkedin-square"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+          <p>
+               ® ALLINDAYS -  2015 
+          </p>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- TODO: Here goes your content! -->
+
+
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

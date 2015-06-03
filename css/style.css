@@ -1,0 +1,128 @@
+#body {
+	background color: rgba(186, 186,186, 1);
+	font-family: "Ropa Sans";
+	font-size: 14px;
+}
+
+#footer {
+	background-color: black;
+	color: white;
+	line-height: 70px;
+}
+
+#footer a {
+	color: #aaaaaa;
+}
+#footer p {
+	color: white;
+}
+
+#footer a:hover {
+	color: #dddddd;
+}
+.social a {
+	font-size: 24px;
+}
+
+#wrapper {
+	background-image: url("../images/background/background.jpg");
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 100px;
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#wrapper h1 {
+	font-size: 50px;
+}
+.spacer {
+	height: 8em;
+}
+.spacer2 {
+	height: 5em;
+	}
+.feature p {
+	font-weight: 300;
+	letter-spacing: 1 px;
+	font-family: Helvetica;
+	color: black;
+	padding-bottom: 2em; 
+}
+
+.feature img {
+	margin-bottom: 2em;
+}
+
+.navbar-transparent {
+	background-color: white;
+}
+
+.navbar-transparent .navbar-brand {
+  color: black;
+  }
+
+.navbar-transparent .navbar-nav > li > a {
+  color: black;
+  line-height: 40px;
+}
+
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:active,
+.navbar-transparent .navbar-nav > li > a:focus,
+.navbar-transparent .navbar-nav > .open > a,
+.navbar-transparent .navbar-nav > .open > a:hover,
+.navbar-transparent .navbar-nav > .open > a:focus {
+  color: black;
+  background-color: white;
+}
+
+.navbar-transparent .navbar-brand:hover,
+.navbar-transparent .navbar-brand:active,
+.navbar-transparent .navbar-brand:focus {
+  color: black;
+}
+.navbar-brand {
+	font-size: 40px;
+	padding-left: 1em;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-family: Ropa Sans;
+}
+.navbar-right {
+	font-family: Helvetica; 
+	font-size: 14px
+}
+
+.vertical-spacer {
+	padding-top: 10em;
+}
+
+#wrapper2 {
+  	background-color: #D1BAD3;
+}
+.contaner {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+.navbar-brand img {
+width: 100px;
+}
+
+.btn-yellow {
+  background: #FCFC00;
+  color: black;
+}
+.btn-yellow:hover, .btn-yellow:focus {
+  background: rgb(252, 255, 179);
+}
+.btn-yellow:active {
+  background: rgb(247, 255, 71);
+}
+.thumbnail img{
+	width: 200px;
+	height: 200px;
+	padding-top: 2em;
+}
